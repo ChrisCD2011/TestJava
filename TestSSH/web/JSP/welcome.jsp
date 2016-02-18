@@ -11,6 +11,7 @@
     <title>欢迎</title>
 </head>
 <body>
-登录成功！
+${userName},成功注册或登录！<br/>
+${tip}
 </body>
 </html>

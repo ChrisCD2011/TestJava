@@ -9,13 +9,24 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
-    <title>登录</title>
+  <title>登录</title>
 </head>
 <body>
-<s:form action="login">
+<script language="JavaScript">
+function regist(){
+  var targetForm = document.forms[0];
+  targetForm.action = "regist";
+}
+function login(){
+  var targetForm = document.forms[0];
+  targetForm.action = "login";
+}
+</script>
+<s:form>
   <s:textfield name="userName" key="用户名"/>
   <s:textfield name="passWord" key="密码"/>
-  <s:submit key="login"/>
+  <input type="submit" value="登录" onclick="login()">
+  <input type="submit" value="注册" onclick="regist()">
 </s:form>
 </body>
 </html>
