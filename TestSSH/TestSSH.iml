@@ -35,5 +35,6 @@
     <orderEntry type="library" name="Struts 2-2.3.20.1" level="project" />
     <orderEntry type="library" name="Spring MVC-4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="org.apache.struts:struts2-convention-plugin:2.5-BETA2" level="project" />
   </component>
 </module>

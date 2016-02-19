@@ -19,7 +19,7 @@ function regist(){
 }
 function login(){
   var targetForm = document.forms[0];
-  targetForm.action = "login";
+  targetForm.action = "user/login";
 }
 </script>
 <s:form>

@@ -1,9 +1,10 @@
-package action;
+package action.user;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 import javax.servlet.http.Cookie;
+import java.io.IOException;
 
 /**
  * Created by Chris on 2016-02-17.
@@ -28,7 +29,11 @@ public class LoginAction extends ActionSupport{
         this.passWord = passWord;
     }
 
-    public String execute() throws Exception{
+    public String execute() throws IOException{
+//        ActionContext context = ActionContext.getContext();
+//        context.put("error","Test Error");
+//        throw new IOException("Test Error");
+
         ActionContext context = ActionContext.getContext();
         Integer counter = (Integer)context.getApplication().get("counter");
         if(counter == null){

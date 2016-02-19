@@ -11,6 +11,6 @@
     <title>错误页面</title>
 </head>
 <body>
-用户名或密码错误！
+${error}
 </body>
 </html>
